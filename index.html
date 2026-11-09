@@ -12,12 +12,14 @@
 
 <html>
   <head>
+    <meta charset="utf-8">
     <title>Angry Birds Chrome</title>
     <meta name="Title" content="Angry Birds Chrome">
     <meta name="description" content="Play Angry Birds online in HD with Google Chrome">
     <meta name="keywords" content="angry birds, free angry birds, online game, play online, angry birds app, chrome, google chrome, web browser, HD, arcade game, online, play angry birds online, web, application, game, iphone, android, ipad, slingshot, catapult, explosions, golden egg, levels, pigs, birds, stars, high scores, chrome os, chrome web store, angry birds rovio, play angry birds on computer, apps for chrome, play angry birds free">
     <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis:800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/angry_birds_chrome.css" type="text/css">
+    <link rel="stylesheet" href="gesture.css" type="text/css">
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/aknpkdffaafgjchaibgeefbgmgeghloj">
     
 
@@ -40,11 +42,12 @@
     </script>
 
     
+      <script type="text/javascript" src="audio-fix.js"></script>
       <script type="text/javascript" src="fowl/fowl.nocache.js"></script>
     
-    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <!-- <script type="text/javascript" src="http://www.google.com/jsapi"></script> -->
     <script type="text/javascript">
-      google.load('payments', '1.0', {
+      window.google && google.load && google.load('payments', '1.0', {
           'packages': [
           
             'production_config'
@@ -242,5 +245,6 @@
       }
     </script>
 
+    <script type="text/javascript" src="gesture.js" charset="utf-8"></script>
   </body>
 </html>
